@@ -1,23 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a basic React Project without Redux and Saga
+
+You can run it on Docker
+
+### If is the first time you run it, just run:     
+`docker-compose up --build`   
+### After the first one, you can just run:  
+`docker-compose up`  
+### To stop containers, just run: 
+`docker-compose stop`
+
+## Packages used on project:
+- prop-types
+- axios
+- styled-components
+- react-bootstrap
+- bootstrap
+- jquery
+- prettier
+- react-router-dom
+
+## ESlint and Prettier
+On .eslinrc and .prettierrc.js are the configurations to support vscode
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `docker-compose run app npm start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
+### `docker-compose run app npm test`
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `docker-compose run app npm build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -27,7 +49,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### `docker-compose run app npm eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
